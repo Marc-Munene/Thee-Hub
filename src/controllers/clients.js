@@ -99,7 +99,7 @@ export const editClient = async (req, res) => {
 };
 
 //delete Client
-const deleteClient = async (req, res) => {
+export const deleteClient = async (req, res) => {
   try {
     const clientId = req.params.id;
 
@@ -108,7 +108,7 @@ const deleteClient = async (req, res) => {
     res.status(200).json({
       success: true,
       message: "client deleted successfully!",
-      deletedCount: deleteClient.deletedCount,
+      deletedCount: deletedClient.deletedCount,
     });
   } catch (error) {
     console.log(error);
