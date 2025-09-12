@@ -9,8 +9,12 @@ import {
 
 const clientRouter = Router();
 
-clientRouter.route("/clients").get(getClients).post(addClients).put(editClient);
+clientRouter.route("/clients").get(getClients).post(addClients);
 
-clientRouter.route("/clients/:id").get(getSingleClient).delete(deleteClient);
+clientRouter
+  .route("/clients/:id")
+  .get(getSingleClient)
+  .put(editClient)
+  .delete(deleteClient);
 
 export { clientRouter };
