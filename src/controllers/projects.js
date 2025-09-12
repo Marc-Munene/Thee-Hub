@@ -25,7 +25,7 @@ export const getProjectBySingleClient = async (req, res) => {
   try {
     const clientId = req.params.id;
 
-    const projects = await Project.find({ client: clientId });
+    const projects = await Project.findById({ client: clientId });
 
     if (!projects.length) {
       return res.status(404).json({
