@@ -1,4 +1,4 @@
-import { Client } from "../database/models/client";
+import { Client } from "../database/models/client.js";
 
 // Get all clients
 export const getClients = async (req, res) => {

@@ -1,4 +1,4 @@
-import { Payment } from "../database/models/payment";
+import { Payment } from "../database/models/payment.js";
 
 // Getting all payments
 export const getAllPayments = async (req, res) => {
