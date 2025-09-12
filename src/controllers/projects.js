@@ -1,4 +1,4 @@
-import { Client } from "../database/models/client";
+// import { Client } from "../database/models/client";
 import { Project } from "../database/models/project.js";
 
 // get all projects

@@ -9,7 +9,7 @@ const projectSchema = new Schema(
     deadline: { type: String, required: true },
     budget: { type: Number, required: true },
     status: {
-      type: string,
+      type: String,
       enum: ["Planned", "Ongoing", "completed"],
       default: "Planned",
     },
