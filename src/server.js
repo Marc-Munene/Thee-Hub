@@ -30,7 +30,7 @@ app.use(express.json());
 app.get("/", home);
 
 // routing
-app.use("/api", clientRouter, projectRouter, paymentRouter);
+app.use("api", clientRouter, projectRouter, paymentRouter);
 
 app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
